@@ -5,7 +5,7 @@
 ## Overview
 **SnapVLA** is a Vision-Language-Action (VLA) imitation learning policy evaluated in **MuJoCo** on multi-object, language-conditioned tabletop manipulation. This repository investigates **architectural inductive biases** and **data efficiency** across dataset scales (12 to 120 expert demonstrations), and benchmarks **calibrated static INT8 Post-Training Quantization (PTQ)** via ONNX Runtime inside closed-loop simulation.
 
-- 📄 **[SnapVLA_Technical_Report.pdf](SnapVLA_Technical_Report.pdf)** — 2-page research paper summarizing methodology & ablations
+
 - 💻 **[snapvla.py](snapvla.py)** — Self-contained PyTorch implementation (`ResNetSpatialSoftmaxVLA`, `ViTPatchVLA`, training & ONNX INT8 PTQ)
 - ⚙️ **[snapvla_int8.onnx](snapvla_int8.onnx)** — Calibrated W8A8 quantized policy (150.9 KB, >1,340 Hz)
 
